@@ -7,7 +7,7 @@ password= ""
 lien_API = "https://www.googleapis.com/youtube/v3/channels?part=statistics&id="
 
 #*************luminosite******************
-luminosite= 5
+luminosite= 5   #entre 0 et 15
 
 #*************temps entre 2 appels API*****
 temps_API = 24  #heures
