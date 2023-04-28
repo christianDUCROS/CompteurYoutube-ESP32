@@ -20,6 +20,10 @@ screen.show()
 time.sleep(1)
 
 #Configuration wifi STATION
+screen.fill(0)  #effacer
+screen.text('WIFI',0,1)
+screen.show()
+time.sleep(1)
 import network
 #connexion  wifi qui renvoie une erreur en absence de connexion
 wlan_sta = network.WLAN(network.STA_IF)
@@ -54,6 +58,11 @@ else:
     
     
 #******************Mise à l'heure******************
+screen.fill(0)  #effacer
+screen.text('heure',0,1)
+screen.show()
+time.sleep(1)
+
 import ntptime
 import utime
 from machine import RTC
@@ -92,8 +101,6 @@ except:
     machine.reset()
 
 
-
-
 #***********************************************
     
 Pb_API = 0    
@@ -103,7 +110,10 @@ abonnes = 0
 #***********lecture de l'api et calcul en k************
 import ujson
 import urequests
-
+screen.fill(0)  #effacer
+screen.text('API',0,1)
+screen.show()
+time.sleep(1)
 def connexion_google() :
     try  : 
         response = urequests.get(parametres.lien_API)
